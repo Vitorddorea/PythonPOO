@@ -1,6 +1,6 @@
 # Declaração de Classe
 class Gafanhoto:
-    def __init__(self):  # Método Construtor
+    def __init__(self):  # Métdo Construtor
         # Atributos de Instância
         self.nome = ""
         self.idade = 0
