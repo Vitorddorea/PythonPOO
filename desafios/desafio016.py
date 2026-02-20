@@ -1,0 +1,21 @@
+'''Crie a classe Funcionario, onde podemos cadastrar nome, setor e cargo. Crie também um métdo que permita ao funcionário se apresentar. '''
+from rich import print
+
+class Funcionario:
+    """
+Representa um funcionário da empresa
+Permite armazenar informações básicas como o nome, setor e cargo, e permite que ele se apresente
+    """
+    def __init__(self, nome, setor, cargo):
+        self.nome = nome
+        self.setor = setor
+        self.cargo = cargo
+
+    def apresentacao(self):
+        return f':vulcan_salute: Olá, sou [blue]{self.nome}[/] e sou {self.cargo} do setor de {self.setor} da empresa Curso em Vídeo'
+
+c1 = Funcionario('Maria', 'Administração', 'Diretora')
+print(c1.apresentacao())
+
+c2 = Funcionario('Pedro', 'TI', 'Programador')
+print(c2.apresentacao())
